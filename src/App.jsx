@@ -74,7 +74,7 @@ export default function App() {
         />
       </div>
 </section>
-      <main className="flex-1">
+      <main className="flex-1 md:mt-[-20rem]">
         <section className="w-full">
           <div className=" px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
@@ -95,7 +95,7 @@ export default function App() {
                 </a> */}
                 <a href='https://github.com/spectre-xenon/rubit' className='flex flex-row gap-2 items-center text-neutral-400'>
                 Documentation
-                <ArrowRightIcon size='20' color='#454545' />
+                <ArrowRightIcon size='20' color='#CCCCCC' />
               </a>
               </div>
             </div>
