@@ -43,16 +43,17 @@ export default function App() {
             </a>
         </div>
       </header>
-      <section className='w-full min-h-screen md:block hidden -z-20 opacity-20 '>
+      <section className='w-full min-h-screen md:block hidden  opacity-20 '>
         <div class="bg-gradient-to-t from-black to-black/20 h-96 w-full absolute bottom-[-63px] left-0 z-10">
         </div>
           <div class="absolute -bottom-16 -left-40 w-[85vw] h-[85vw] rounded-full transform -rotate-12">
         <img 
+        className='w-full'
         src='/rust.svg'
         alt='Top left sphere'
       />
       </div>
-      <div class="absolute bottom-0 right-0 w-[40vw] h-[40vw] rounded-full -z-10">
+      <div class="absolute bottom-0 right-0 w-[40vw] h-[40vw] rounded-full ">
         <img 
         src='/rust.svg'
         alt='Top left sphere'
@@ -65,33 +66,37 @@ export default function App() {
       <div className="absolute inset-0 bg-gradient-to-t from-black to-black/20 z-10"></div>
 
       {/* Content */}
-      <div className="flex flex-col h-full items-center justify-center py-4 relative -z-20">
+      <div className="flex flex-col h-full items-center justify-center py-4 relative ">
         <img 
         className='w-full'
-          src='/big-sphere.svg'
+          src='/rust.svg'
           alt='Top left sphere'
         />
       </div>
 </section>
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
+        <section className="w-full">
           <div className=" px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-                  Rubit: The Rust-Powered BitTorrent Client
+                <h1 className="text-2xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
+                  <span className='text-[#DB2777]'>Rubit </span>:The Rust-Powered BitTorrent Client
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl">
                   Lightning-fast, efficient, and secure. Experience the power of Rust in your torrenting.
                 </p>
               </div>
-              <div className="space-x-4 flex md:flex-row flex-col items-center gap-2">
+              <div className="md:space-x-4 flex md:flex-row flex-col items-center gap-2">
                 <a href='https://github.com/spectre-xenon/rubit?tab=readme-ov-file#installation' className="bg-white text-black hover:bg-gray-200 px-2 py-1 rounded-lg">
                   Install Rubit
                 </a>
-                <a href='https://github.com/spectre-xenon/rubit' className='flex flex-row items-center gap-2 bg-white text-black hover:bg-gray-200 px-2 py-1 rounded-lg'>
+                {/* <a href='https://github.com/spectre-xenon/rubit' className='flex flex-row items-center bg-white text-black hover:bg-gray-200 px-2 py-1 rounded-lg'>
                   Documentation
-                </a>
+                </a> */}
+                <a href='https://github.com/spectre-xenon/rubit' className='flex flex-row gap-2 items-center text-neutral-400'>
+                Documentation
+                <ArrowRightIcon size='20' color='#454545' />
+              </a>
               </div>
             </div>
           </div>
