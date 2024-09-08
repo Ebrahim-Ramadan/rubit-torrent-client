@@ -24,7 +24,7 @@ export default function App() {
   ]
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#171717] text-white">
+    <div className="flex flex-col min-h-screen text-white">
      
         <header className="w-full  py-6 px-4 md:px-6">
         <div className=" mx-auto flex max-w-7xl items-center justify-between">
@@ -44,7 +44,7 @@ export default function App() {
         </div>
       </header>
       <section className='w-full min-h-screen md:block hidden  opacity-20 '>
-        <div class="bg-gradient-to-t from-black to-black/20 h-96 w-full absolute bottom-[-63px] left-0 z-10">
+        <div class="bg-gradient-to-t from-[#171717] to-black/20 h-96 w-full absolute bottom-[-63px] left-0 z-10">
         </div>
           <div class="absolute -bottom-16 -left-40 w-[85vw] h-[85vw] rounded-full transform -rotate-12">
         <img 
@@ -63,7 +63,7 @@ export default function App() {
 
     <section className='relative h-48 w-full md:hidden flex items-center justify-center'>
       {/* bg gradient */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black to-black/20 z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-[#171717] to-black/20 z-10"></div>
 
       {/* Content */}
       <div className="flex flex-col h-full items-center justify-center py-4 relative ">
@@ -74,7 +74,7 @@ export default function App() {
         />
       </div>
 </section>
-      <main className="flex-1 md:mt-[-20rem]">
+      <main className="flex-1 md:mt-[-20rem] z-20">
         <section className="w-full">
           <div className=" px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
@@ -93,7 +93,7 @@ export default function App() {
                 {/* <a href='https://github.com/spectre-xenon/rubit' className='flex flex-row items-center bg-white text-black hover:bg-gray-200 px-2 py-1 rounded-lg'>
                   Documentation
                 </a> */}
-                <a href='https://github.com/spectre-xenon/rubit' className='flex flex-row gap-2 items-center text-neutral-400'>
+                <a href='https://github.com/spectre-xenon/rubit' className='hover:text-neutral-300 flex flex-row gap-2 items-center text-neutral-400'>
                 Documentation
                 <ArrowRightIcon size='20' color='#CCCCCC' />
               </a>
@@ -101,7 +101,7 @@ export default function App() {
             </div>
           </div>
         </section>
-        <section id="features" className="w-full py-12 md:py-24 lg:py-32 bg-[#171717]">
+        <section id="features" className="w-full py-12 md:py-24 lg:py-32">
           <div className=" px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12">
               Powerful Features
@@ -134,7 +134,7 @@ export default function App() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-[#171717]">
+        <section className="w-full py-12 md:py-24 lg:py-32 ">
           <div className=" px-4 md:px-6">
           <div className="grid gap-4 md:gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
           <div className="flex flex-col justify-center space-y-4">
