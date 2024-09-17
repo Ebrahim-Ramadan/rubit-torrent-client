@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react'
-import { Download, Github, Terminal, FileDown, Layers, Wifi, Share2, Cog, HardDrive, Code, Cpu, BarChart } from "lucide-react"
+import {  FileDown, Layers, Wifi, Share2, Cog, HardDrive, Code, Cpu, BarChart } from "lucide-react"
 import { GithubIcon } from 'lucide-react'
 import { CopyComponent } from './CopyComponent'
 import { ArrowRightIcon } from 'lucide-react'
-
+import Terminal from './Terminal'
 export default function App() {
   const [scrollY, setScrollY] = useState(0)
 
@@ -75,6 +75,8 @@ export default function App() {
       </div>
 </section>
       <main className="flex-1 md:mt-[-20rem] z-20">
+<Terminal/>
+
         <section className="w-full">
           <div className=" px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
