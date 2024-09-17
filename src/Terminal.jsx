@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { Copy, Check } from 'lucide-react';
 
-export function Terminal() {
+export function TerminalComponent() {
   const [terminalStep, setTerminalStep] = useState(0);
   const [copied, setCopied] = useState(false);
   const terminalSteps = [
@@ -64,4 +64,4 @@ export function Terminal() {
     </div>
   );
 }
-export default Terminal;
+export default TerminalComponent;

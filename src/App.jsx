@@ -1,17 +1,9 @@
-import { useState, useEffect } from 'react'
-import {  FileDown, Layers, Wifi, Share2, Cog, HardDrive, Code, Cpu, BarChart } from "lucide-react"
+import {  FileDown, Layers,Terminal, Wifi, Share2, Cog, HardDrive} from "lucide-react"
 import { GithubIcon } from 'lucide-react'
 import { CopyComponent } from './CopyComponent'
 import { ArrowRightIcon } from 'lucide-react'
-import Terminal from './Terminal'
+import TerminalComponent from './Terminal'
 export default function App() {
-  const [scrollY, setScrollY] = useState(0)
-
-  useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY)
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
 
   const features = [
     { icon: FileDown, title: "Bencode Decoding", description: "Efficiently decode torrent file structures" },
@@ -75,7 +67,7 @@ export default function App() {
       </div>
 </section>
       <main className="flex-1 md:mt-[-20rem] z-20">
-<Terminal/>
+<TerminalComponent/>
 
         <section className="w-full">
           <div className=" px-4 md:px-6">
